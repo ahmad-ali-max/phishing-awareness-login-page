@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="warning-banner">
+            ⚠️ PHISHING AWARENESS SIMULATION
+        </div>
+
+        <div class="card">
+
+            <div class="logo">🔐</div>
+
+            <h1>Account Login</h1>
+            <p class="subtitle">
+                This is a simulated login page for cybersecurity education.
+            </p>
+
+            <form id="loginForm">
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="example@email.com"
+                    autocomplete="off"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter a sample password"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">Sign In</button>
+
+            </form>
+
+            <div id="result" class="result hidden">
+                <div class="success-icon">🛡️</div>
+
+                <h2>You spotted a phishing simulation!</h2>
+
+                <p>
+                    In a real phishing attack, entering your credentials
+                    could give them to an attacker.
+                </p>
+
+                <h3>🚩 Warning Signs</h3>
+
+                <ul>
+                    <li>Check the website URL carefully.</li>
+                    <li>Don't enter passwords on suspicious websites.</li>
+                    <li>Be careful with urgent login messages.</li>
+                    <li>Check the sender of emails and messages.</li>
+                    <li>Use MFA/2FA whenever possible.</li>
+                </ul>
+
+                <button id="tryAgain">
+                    Try Again
+                </button>
+            </div>
+
+        </div>
+
+        <p class="footer">
+            Educational demonstration only • No credentials are stored
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
