@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fake Account Detector</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Fake<span>Detect</span></div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Detect Suspicious<br><span>Social Accounts</span></h1>
+
+            <p>
+                Analyze public profile information and identify
+                suspicious account patterns using our smart risk analyzer.
+            </p>
+
+            <a href="#analyzer" class="start-btn">
+                Start Analysis
+            </a>
+        </div>
+
+
+        <div class="hero-card">
+            <div class="shield">🛡️</div>
+            <h3>AI Risk Analysis</h3>
+            <p>Check suspicious profile signals quickly.</p>
+
+            <div class="mini-score">
+                <div>
+                    <span>Risk Score</span>
+                    <strong>82%</strong>
+                </div>
+
+                <div class="progress">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="analyzer" class="analyzer-section">
+
+        <div class="section-title">
+            <h2>Profile Analyzer</h2>
+            <p>Enter publicly available profile information</p>
+        </div>
+
+
+        <div class="analyzer-box">
+
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="username"
+                       placeholder="@example_user">
+            </div>
+
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>Followers</label>
+                    <input type="number" id="followers"
+                           placeholder="1000">
+                </div>
+
+                <div class="input-group">
+                    <label>Following</label>
+                    <input type="number" id="following"
+                           placeholder="500">
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>Total Posts</label>
+                    <input type="number" id="posts"
+                           placeholder="50">
+                </div>
+
+                <div class="input-group">
+                    <label>Account Age (months)</label>
+                    <input type="number" id="age"
+                           placeholder="24">
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Profile Picture</label>
+
+                <select id="picture">
+                    <option value="yes">Has Profile Picture</option>
+                    <option value="no">No Profile Picture</option>
+                </select>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Bio</label>
+
+                <textarea id="bio"
+                    placeholder="Enter profile bio..."></textarea>
+
+            </div>
+
+
+            <button onclick="analyzeAccount()" class="analyze-btn">
+                🔍 Analyze Account
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section id="result" class="result-section">
+
+        <div class="result-card">
+
+            <h2>Analysis Result</h2>
+
+            <div class="score-circle">
+                <span id="score">0%</span>
+            </div>
+
+            <h3 id="result-title">Waiting for analysis...</h3>
+
+            <p id="result-description">
+                Enter profile information and click Analyze Account.
+            </p>
+
+            <div class="reasons">
+
+                <h3>Analysis Signals</h3>
+
+                <ul id="reasons-list">
+                    <li>Waiting for profile analysis...</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="features" class="features">
+
+        <div class="section-title">
+            <h2>How It Works</h2>
+        </div>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div>📊</div>
+                <h3>Profile Analysis</h3>
+                <p>
+                    Analyze basic public profile information.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div>🔎</div>
+                <h3>Risk Signals</h3>
+                <p>
+                    Identify suspicious account patterns.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div>🤖</div>
+                <h3>Smart Score</h3>
+                <p>
+                    Generate a risk score based on available signals.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer id="about">
+
+        <h3>FakeDetect</h3>
+
+        <p>
+            A student project for analyzing suspicious public
+            profile signals.
+        </p>
+
+        <p class="warning">
+            ⚠️ This tool provides an estimate, not proof that an account
+            is fake or genuine.
+        </p>
+
+    </footer>
+
+
+    <script src="script2.js"></script>
+
+</body>
+</html>
+```
